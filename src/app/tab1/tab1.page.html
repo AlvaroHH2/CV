@@ -1,17 +1,67 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+  
+    <div class="perfil">
+      
+    <ion-avatar >
+
+  <img src="../../assets/cara.jpg" alt=""></ion-avatar>
+  <div class="perfil2">
+<h6 id="nombre">Álvaro de la Cruz</h6>
+<h6 id="trabajo">Desarrollador de Aplicaciones Multiplataforma</h6></div>
+<ion-icon name="settings-outline" id="ajustes"></ion-icon>
+
+</div>
+
+
+
+
+  <div id="columna">
+    <ion-progress-bar value="0.25" color="danger"></ion-progress-bar>
+    <nav class="perfil3">
+<h6 id="perfilCom"> <b id="porcentaje"> 25%</b> Perfil Completado </h6>
+<ion-button id="completar" color="medium" button-large>Completar Perfil</ion-button>
+</nav>
+</div>
+</ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="ajustesTotal">
+    <ion-grid>
+      <ion-row>
+      <ion-col>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+        <a href="tabs/tab2">
+
+  <ion-icon name="person-outline" id="icono" href="../tab2/tab2.page.html"></ion-icon></a>
+  <h6 id="texto">Datos Personales</h6>
+
+</ion-col>
+<ion-col>
+
+ 
+<ion-icon name="albums-outline" id="icono" (click)="cambiar()"></ion-icon>
+<h6 id="texto">Estudios</h6>
+
+</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+<a href="tabs/tab2">
+    <ion-icon name="briefcase-outline" id="icono"></ion-icon>   </a>
+     <h6 id="texto">Experiencia Laboral</h6>
+
+</ion-col>
+<ion-col>
+
+  <a href="tabs/tab3">    
+  <ion-icon name="checkmark-outline" id="icono"></ion-icon> </a>   <h6 id="texto">Habilidades   </h6>
+
+</ion-col>
+  </ion-row>
+
+</ion-grid>
+</div>
 </ion-content>
