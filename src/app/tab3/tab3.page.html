@@ -1,17 +1,82 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
-    </ion-title>
+Estudios    </ion-title>
+<ion-buttons slot="start">
+  <ion-back-button defaultHref="tabs/tab1"></ion-back-button>
+</ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-card>
+    <ion-item>
+      <ion-label position="floating" id="texto1">
+        <ion-icon name="school"></ion-icon> <b>
+        Grado Superior DAM </b><ion-icon name="school"></ion-icon></ion-label><br><hr>
+        <img src="../../assets/campusfp.jpg" alt="">
+        
+     
+     
+         
+            <ion-label position="floating">
+              <ion-icon name="school" ></ion-icon>
+              Nombre Del Campus</ion-label>
+           
+              <hr>
+            <p>Campus FP de Getafe</p>
+       
+      
+        
+              <ion-label position="floating">
+                <ion-icon name="calendar" ></ion-icon>
+                Duración </ion-label>
+             
+                <hr>
+      
+      
+              <p id="fecha">2021-2022</p>
+              
+         
+        
+ 
+      </ion-item>
+     
+</ion-card>
+<ion-card>
+  <ion-item>
+    <ion-label position="floating" id="texto1">
+      <ion-icon name="school"></ion-icon> <b>
+      Bachillerato de Ciencias </b><ion-icon name="school"></ion-icon></ion-label><br><hr>
+      <img src="../../assets/escolapios-getafe.jpg" alt="">
+      
+   
+   
+       
+          <ion-label position="floating">
+            <ion-icon name="school" ></ion-icon>
+            Nombre Del Instituto</ion-label>
+         
+            <hr>
+          <p>Escolapios de Getafe</p>
+     
+    
+      
+            <ion-label position="floating">
+              <ion-icon name="calendar" ></ion-icon>
+              Duración </ion-label>
+           
+              <hr>
+    
+    
+            <p id="fecha">2018-2020</p>
+            
+       
+      
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    </ion-item>
+   
+</ion-card>
+</ion-list>
 </ion-content>
